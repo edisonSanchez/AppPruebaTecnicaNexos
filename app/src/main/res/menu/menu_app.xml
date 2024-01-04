@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigationView">
+
+    <group
+        android:id="@+id/authorizationGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/authorizationTransaction"
+            android:title="@string/text_option1_menu"/>
+
+    </group>
+
+    <group
+        android:id="@+id/searchTransactionsGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/searchTransactions"
+            android:title="@string/text_option2_menu"/>
+
+    </group>
+
+    <group
+        android:id="@+id/approvedTransactionsGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/approvedTransactions"
+            android:title="@string/text_option3_menu"/>
+
+    </group>
+
+</menu>

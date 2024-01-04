@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.DetailsTransactionActivity">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <androidx.appcompat.widget.Toolbar
+              android:id="@+id/toolBar"
+              android:background="@color/red"
+              android:layout_width="match_parent"
+              android:layout_height="?android:actionBarSize"/>
+
+          <TextView
+              android:text="@string/title_details_transaction"
+              android:layout_marginTop="64dp"
+              android:textSize="20sp"
+              android:textStyle="bold"
+              android:textColor="@color/black"
+              android:textAllCaps="true"
+              android:layout_gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:text="@string/text_number_receipt_details_activity"
+              android:textStyle="bold"
+              android:textSize="16sp"
+              android:layout_gravity="center"
+              android:textColor="@color/black"
+              android:layout_marginTop="32dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:id="@+id/numberReceipt"
+              tools:text="4543543543565"
+              android:textSize="15sp"
+              android:layout_gravity="center"
+              android:textColor="@color/black"
+              android:layout_marginTop="4dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:text="@string/text_id_transaction_details_activity"
+              android:textStyle="bold"
+              android:textSize="16sp"
+              android:layout_gravity="center"
+              android:textColor="@color/black"
+              android:layout_marginTop="32dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:id="@+id/idTransaction"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginTop="4dp"
+              tools:text="4543543543565"
+              android:textColor="@color/black"
+              android:textSize="15sp" />
+
+          <TextView
+              android:text="@string/text_id_device_details_activity"
+              android:textStyle="bold"
+              android:textSize="16sp"
+              android:layout_gravity="center"
+              android:textColor="@color/black"
+              android:layout_marginTop="32dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:id="@+id/idDevice"
+              tools:text="4543543543565"
+              android:textSize="15sp"
+              android:layout_gravity="center"
+              android:textColor="@color/black"
+              android:layout_marginTop="4dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:text="@string/text_value_transaction_details_activity"
+              android:textStyle="bold"
+              android:textSize="16sp"
+              android:layout_gravity="center"
+              android:textColor="@color/black"
+              android:layout_marginTop="32dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:id="@+id/valueTransaction"
+              tools:text="$ 500.000"
+              android:textSize="15sp"
+              android:layout_gravity="center"
+              android:textColor="@color/black"
+              android:layout_marginTop="4dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:text="@string/text_number_card_details_activity"
+              android:textStyle="bold"
+              android:textSize="16sp"
+              android:layout_gravity="center"
+              android:textColor="@color/black"
+              android:layout_marginTop="32dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:id="@+id/numberCardTransaction"
+              tools:text="3483758485045"
+              android:textSize="16sp"
+              android:layout_gravity="center"
+              android:textColor="@color/black"
+              android:layout_marginTop="4dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <Button
+              android:id="@+id/buttonAnnulationTransaction"
+              android:layout_margin="64dp"
+              android:background="@drawable/background_button"
+              android:text="@string/text_button_annulation_details_activity"
+              android:padding="15dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+      </LinearLayout>
+
+  </ScrollView>
+
+  <View
+      android:id="@+id/backgroundProgress"
+      android:alpha="0.5"
+      android:visibility="gone"
+      android:background="@color/black"
+      android:clickable="true"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:focusable="true" />
+
+  <ProgressBar
+      android:id="@+id/progressBar"
+      android:indeterminate="true"
+      android:visibility="gone"
+      android:layout_gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+</FrameLayout>
